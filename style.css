@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*sets how the total width and height is calculated*/
+}
+
+:root{ /*stores variables here*/
+    --sand: #e1b382;
+    --sand-shawdow: #c89666;
+    --nightblue: #20424b;
+    --nightblue-shadow: #12343b;
+}
+
+body{
+    color: var(--nightblue-shadow);
+    font-family: 'Single Day', cursive;
+}
+
+h1{
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+}
+
+h2{
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    background-color: var(--sand);
+}
+
+#gameboard{
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    font-size: 4rem;
+}
+
+.box{
+    height: 120px;
+    width: 120px;
+    background-color: var(--sand-shawdow);
+    border: 5px solid var(--sand);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: 700;
+}
+
+button{
+    color: var(--nightblue);
+    background-color: var(--sand);
+    border: 1px solid var(--nightblue);
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 5px 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: var(--sand-shawdow);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:active{
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+}
